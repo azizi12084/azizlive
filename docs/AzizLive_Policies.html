@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aziz Live Policies</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; background-color: #fafafa; }
+        .lang-btns { margin-bottom: 20px; }
+        button { margin-right: 10px; padding: 8px 12px; cursor: pointer; }
+        .section { display: none; }
+        .active { display: block; }
+        h2 { color: #005b96; }
+        hr { margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <h1>Aziz Live – Privacy, Terms & Safety Policies</h1>
+    <div class="lang-btns">
+        <button onclick="switchLang('ar')">العربية</button>
+        <button onclick="switchLang('tr')">Türkçe</button>
+        <button onclick="switchLang('en')">English</button>
+    </div>
+
+    <!-- Arabic -->
+    <div id="ar" class="section active" dir="rtl">
+        <h2>سياسة الخصوصية</h2>
+        <p>تطبيق <strong>Aziz Live</strong>، المملوك من شركة <strong>Aziz Technologies</strong>، يجمع فقط البيانات الضرورية لتقديم خدمة دردشة الفيديو (مثل الكاميرا، الميكروفون، الاسم، العمر). لا نقوم بتسجيل أو حفظ المكالمات، ويتم استخدام البيانات فقط لتحسين تجربة المستخدم.</p>
+        <hr>
+        <h2>شروط الاستخدام</h2>
+        <p>باستخدامك تطبيق <strong>Aziz Live</strong>، فإنك تؤكد أنك تجاوزت 18 عامًا وتتعهد بعدم نشر أي محتوى غير لائق أو مسيء. يحق للإدارة حظر أي مستخدم يخالف هذه القواعد. لا يُسمح بتسجيل المكالمات دون موافقة الطرفين.</p>
+        <hr>
+        <h2>سياسة الأمان والمحتوى</h2>
+        <p>نهدف إلى خلق بيئة آمنة للتواصل بين الجنسين. يحتوي التطبيق على خاصية <strong>الإبلاغ والحظر</strong> لأي سلوك غير لائق. تتم مراجعة البلاغات خلال 24 ساعة. يمكن التواصل معنا عبر البريد الإلكتروني: <strong>azizi12084@gmail.com</strong></p>
+    </div>
+
+    <!-- Turkish -->
+    <div id="tr" class="section">
+        <h2>Gizlilik Politikası</h2>
+        <p><strong>Aziz Technologies</strong> tarafından geliştirilen <strong>Aziz Live</strong> uygulaması, yalnızca video sohbet hizmeti sunmak için gerekli verileri (kamera, mikrofon, ad, yaş) toplar. Görüşmeler kaydedilmez ve veriler yalnızca kullanıcı deneyimini geliştirmek için kullanılır.</p>
+        <hr>
+        <h2>Kullanım Şartları</h2>
+        <p><strong>Aziz Live</strong> uygulamasını kullanarak 18 yaşından büyük olduğunuzu ve uygunsuz veya saldırgan içerik paylaşmayacağınızı onaylarsınız. Yönetim, kuralları ihlal eden kullanıcıları engelleme hakkına sahiptir. Tarafların onayı olmadan görüşme kaydı yapılması yasaktır.</p>
+        <hr>
+        <h2>Güvenlik ve İçerik Politikası</h2>
+        <p>Amacımız, cinsiyetler arasında güvenli bir iletişim ortamı oluşturmaktır. Uygulamada uygunsuz davranışlar için <strong>bildirme ve engelleme</strong> özelliği vardır. Şikayetler 24 saat içinde incelenir. İletişim e‑postası: <strong>azizi12084@gmail.com</strong></p>
+    </div>
+
+    <!-- English -->
+    <div id="en" class="section">
+        <h2>Privacy Policy</h2>
+        <p><strong>Aziz Live</strong>, owned by <strong>Aziz Technologies</strong>, collects only essential data to provide video chat services (camera, microphone, name, age). Calls are not recorded, and data is used solely to enhance user experience.</p>
+        <hr>
+        <h2>Terms of Use</h2>
+        <p>By using <strong>Aziz Live</strong>, you confirm that you are over 18 years old and agree not to share any inappropriate or offensive content. The management reserves the right to ban users who violate these terms. Recording calls without consent is strictly prohibited.</p>
+        <hr>
+        <h2>Safety & Moderation Policy</h2>
+        <p>Our goal is to provide a safe environment for gender communication. The app includes <strong>report and block</strong> features for inappropriate behavior. Reports are reviewed within 24 hours. Contact: <strong>azizi12084@gmail.com</strong></p>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+            document.getElementById(lang).classList.add('active');
+        }
+    </script>
+</body>
+</html>
